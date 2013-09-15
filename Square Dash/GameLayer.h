@@ -7,14 +7,17 @@
 //
 
 
-#import <GameKit/GameKit.h>
-
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
+#import "DRPlayerSprite.h"
 
 // HelloWorldLayer
-@interface HelloWorldLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
+@interface GameLayer : CCLayer 
 {
+    
+    CCLabelTTF *scoreLabel;
+    CCSprite *ground;
+    DRPlayerSprite *player;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
